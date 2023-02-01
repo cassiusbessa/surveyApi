@@ -33,7 +33,7 @@ export class SingUpController implements Controller {
       })
       return ok(account)
     } catch (error) {
-      return serverError(error.stack)
+      return serverError(error)
     }
   }
 }
