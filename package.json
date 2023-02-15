@@ -10,7 +10,8 @@
     "test:unit": "npm test -- --watch -c jest-unit-config.js",
     "test:integration": "npm test -- --watch -c jest-integration-config.js",
     "test:staged": "npm test -- --findRelatedTests",
-    "test:ci": "npm test -- --coverage"
+    "test:ci": "npm test -- --coverage",
+    "lint-staged": "./node_modules/.bin/lint-staged"
   },
   "keywords": [],
   "author": "",
@@ -27,7 +28,7 @@
     "@types/validator": "^13.7.10",
     "eslint-config-standard-with-typescript": "^24.0.0",
     "git-commit-msg-linter": "^4.5.0",
-    "husky": "^4.3.8",
+    "husky": "^8.0.3",
     "jest": "^29.3.1",
     "lint-staged": "^13.1.0",
     "supertest": "^6.3.3",
