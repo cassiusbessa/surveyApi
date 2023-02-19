@@ -5,7 +5,7 @@ import { BcryptAdapter } from '../../../infra/cryptography/bcrypt-adapter/bcrypt
 import { LogControllerDecorator } from '../../decorators/log-controller-decorator'
 import { Controller } from '../../../presentation/protocols'
 import { LogMongoRepository } from '../../../infra/db/mongodb/log/log-mongo-repository'
-import { makeSignUpValidation } from '../signup/signup-validation'
+import { makeSignUpValidation } from './signup-validation-factory'
 
 export const makeSingUpController = (): Controller => {
   const salt = 12
